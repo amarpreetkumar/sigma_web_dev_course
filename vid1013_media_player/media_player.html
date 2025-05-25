@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        ul,h2{
+            display: flex;
+            justify-content: center;
+           padding: 0;
+           margin: 0;
+           list-style: none;
+        }
+      li {
+        font-size: large;
+        display: inline;
+        margin: 0 15px;
+      }
+       video {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* or use 'contain' for letterboxing */
+  }
+  nav{
+    background-color:yellow;
+    align-items: center;
+    align-content: center;
+  }
+
+    </style>
+  </head>
+  <body>
+    <h1><header>MEDIA PLAYER</header></h1>
+    <nav>
+      <ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+      </ul>
+    </nav>
+
+    <h2>video player</h2>
+
+    <video   width="250" height="250" src="vid1.mp4" controls></video>
+    <video   width="250" height="250" src="vid5.mp4" controls></video>
+    <video   width="250" height="250" src="vid6.mp4" controls></video>
+
+        <h2>audio player</h2>
+        <audio src="sample-3s.mp3" controls></audio>
+        <audio src="sample-6s.mp3" controls></audio>
+        <audio src="sample-12s.mp3" controls></audio>
+
+  </body>
+</html>
