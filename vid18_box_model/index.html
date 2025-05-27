@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    padding: 0px;
+    border: 2px solid blue;
+    margin: 0px;
+    box-sizing: border-box;
+    word-break: break-word; /* Add this line */
+}
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box with padding, border, and margin.
+    </div>
+</body>
+</html>

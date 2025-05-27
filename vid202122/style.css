@@ -1,0 +1,37 @@
+div{
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+.div1{
+    background-color: lightblue;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+    min-width: 1000px;
+}
+.div2{
+    background-color: rgb(141, 203, 9);
+    border: 2px solid rgb(114, 77, 80);
+    padding: 10px;
+    margin: 5px;
+}
+.div3{
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin: 5px;
+}
+.div4{
+    background-color: rgb(255, 255, 0);
+    border: 2px solid rgb(0, 0, 0);
+   height: 100px;
+    width: 100px;
+}
+.a{
+    width: 2em;
+    background-color: red;
+    border: 2px solid black;
+    height: 3em;
+}
+

@@ -1,0 +1,19 @@
+p{
+    font: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    font-display: swap;
+    color: aqua;
+    background-color: black;
+    font-family: poppins;   
+    text-transform: uppercase;
+    text-decoration: overline;
+    text-decoration-color:yellow ;
+    text-decoration-style: wavy ;
+    text-align: center;
+    color: red;
+    
+
+ }
