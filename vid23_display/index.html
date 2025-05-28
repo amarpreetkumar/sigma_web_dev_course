@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <style>
-        div{
-            width: 100px;
-            height: 100px;
-            background-color: lightblue;
-            margin: 10px;
-            padding: 10px;
-            border: 2px solid blue;
-            display: inline;
+    <style>
+        div {
+            background-color: red;
+            /*this will make block element inline
+            display:inline; */
+          width: 1000px;
+            /*this will not work because p is a block element and we cant set top, bottom, left, right etc*/
+            display:inline-block; /*this will make block element inline and we can set top, bottom, left, right etc*/
+            /*here we cant set width,padding,margin,border etc*/
+            /*display:inline-block; this will make block element inline and we can set width,padding,margin,border etc*/
+            /*display: flex; this will make block element inline and we can set width,padding,margin,border etc*/
         }
     </style>
 </head>
 <body>
     <div>
-        <p>Lorem ipsum dolor sit amet.</p>
+        Lorem ipsum dolor sit amet
     </div>
-
-    
 </body>
 </html>

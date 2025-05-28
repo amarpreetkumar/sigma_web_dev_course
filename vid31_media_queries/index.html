@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Example</title>
+    <style>
+        body {
+            background-color: lightgray;
+            transition: background 0.3s;
+        }
+        h1 {
+            text-align: center;
+        }
+        /* For screens 600px or less */
+        @media (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+        /* For screens between 601px and 1200px */
+        @media (min-width: 601px) and (max-width: 1200px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+        /* For screens greater than 1200px */
+        @media (min-width: 1201px) {
+            body {
+                background-color: lightcoral;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Resize the window to see the background color change!</h1>
+    <p>
+        This page uses <strong>media queries</strong> to change the background color based on the width of the viewport.
+    </p>
+</body>
+</html>

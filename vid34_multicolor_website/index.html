@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi-Color Navbar</title>
+  <style>
+    :root {
+      --color-home: #ff6b6b;
+      --color-about: #6bc5ff;
+      --color-services: #6bffb1;
+      --color-contact: #ffde6b;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+    }
+
+    nav a {
+      padding: 15px 25px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a.home:hover {
+      background-color: var(--color-home);
+    }
+
+    nav a.about:hover {
+      background-color: var(--color-about);
+    }
+
+    nav a.services:hover {
+      background-color: var(--color-services);
+    }
+
+    nav a.contact:hover {
+      background-color: var(--color-contact);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="home">Home</a>
+    <a href="#" class="about">About</a>
+    <a href="#" class="services">Services</a>
+    <a href="#" class="contact">Contact</a>
+  </nav>
+
+</body>
+</html>
