@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: grey;
+        margin: 0px;
+        padding: 0;
+       }
+         .main{
+          width: 80%;
+          height: 100vh;
+          margin: auto;
+          background-color: white;
+          padding: 20px;
+          box-sizing: border-box;
+          overflow-y: scroll; /* Allows scrolling if content overflows */
+         }
+         /*desscent selector */
+
+         .main p{
+            background-color: yellow;
+         }
+
+         /*child selector */
+            .main > p{
+                background-color: lightblue;
+            }
+
+            .main >p:first-child{
+                background-color: lightgreen;
+            }
+            .main >p:last-child{
+                background-color: lightcoral;
+            }
+            .main p:nth-child(2){
+                background-color: rgb(155, 6, 103);
+            }
+            .main p:nth-child(odd){
+                background-color: rgb(6, 155, 103);
+            }
+            .main ::first-line{
+                font-weight: bold;
+                color: red;
+            }
+
+
+            /*attribute selector */
+            .main p[class]{
+                background-color: rgb(167, 1, 1);
+            }
+
+/* pseudo class selector */
+            ::selection{
+                background-color: yellow;
+                color: black;
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        i am main div 
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. 
+            Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum. 
+            Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum. 
+            Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur.
+        </p>
+    </div>
+</body>
+</html>

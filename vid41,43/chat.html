@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UltraEdit NavBar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-section img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo-text h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .logo-text p {
+      margin: -4px 0 0 0;
+      font-size: 12px;
+      color: gray;
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .menu li::after {
+      content: "▼";
+      font-size: 10px;
+      margin-left: 5px;
+      position: absolute;
+      top: 2px;
+    }
+
+    .menu li:nth-child(4)::after,
+    .menu li:nth-child(5)::after {
+      content: "";
+    }
+
+    .right-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #333;
+      gap: 5px;
+    }
+
+    .search-icon {
+      width: 16px;
+      height: 16px;
+      border: 2px solid #333;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .search-icon::after {
+      content: "";
+      position: absolute;
+      right: -5px;
+      bottom: -5px;
+      width: 2px;
+      height: 10px;
+      background-color: #333;
+      transform: rotate(-45deg);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <!-- Logo Section -->
+    <div class="logo-section">
+      <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo.png" alt="UltraEdit Logo">
+      <div class="logo-text">
+        <h1>UltraEdit</h1>
+        <p>by Embarcadero</p>
+      </div>
+    </div>
+
+    <!-- Menu Section -->
+    <ul class="menu">
+      <li>Products</li>
+      <li>For business</li>
+      <li>Resources</li>
+      <li>Academic licensing</li>
+      <li>Our company</li>
+    </ul>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <div class="language">
+        🌐 English
+      </div>
+      <div class="search-icon"></div>
+    </div>
+  </nav>
+
+</body>
+</html>
