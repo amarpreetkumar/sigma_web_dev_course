@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .conatainer {
+        width: 80vw;
+        height: 80vh;
+        background-color: yellow;
+      }
+      .box {
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        
+        transition-property: transform,background-color;
+        transition-duration: 4s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.5s;
+      }
+      .box:hover{
+        transform: translateX(200px) translateY(200px);
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conatainer">
+      <div class="box translate">i am box</div>
+    </div>
+  </body>
+</html>
+<!--we will see transition in inspect of chrome ..-->
