@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="value">
+            <label for="value1"></label>
+            <input type="number" id="value1" 
+            class="first" placeholder="Enter first number">
+            <label for="value2"></label>
+            <input type="number" id="value2" placeholder="Enter second number">
+        </div>
+
+        <div class="operator">
+            <label for="operator">Select Operator</label>
+            <select id="operator">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+        </div>
+  <button id="calculate">Calculate</button>
+
+        <div class="result">
+           <!--i want to display the result here-->
+            <label for="result">Result : </label>
+            <input type="number" id="result" readonly>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
