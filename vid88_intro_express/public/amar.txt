@@ -1,0 +1,5 @@
+//this is used to demonstarate static files
+//we can not get it directly because of express.js
+//security
+//so we will use static file middleware which makes 
+//things public
